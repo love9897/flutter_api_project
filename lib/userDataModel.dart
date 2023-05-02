@@ -22,11 +22,11 @@ class UserDataModel {
 }
 
 class Users {
+  Users({required this.name, required this.id, required this.atype});
+
   String? name;
   String? id;
   String? atype;
-
-  Users({this.name, this.id, this.atype});
 
   Users.fromJson(Map<String, dynamic> json) {
     name = json['name'];
@@ -42,5 +42,3 @@ class Users {
     return data;
   }
 }
-
-
